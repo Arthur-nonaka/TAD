@@ -16,7 +16,11 @@ namespace TAD {
             // equipe.RegistrarCampeonatoVencido(1000);
             
             // Console.WriteLine(equipe.Imprimir());
-
+            Produto produto = new Produto("Cerveja", 100, 15.99f);
+            Console.WriteLine(produto.AplicarCupomDeDescontoValor(10));
+            Console.WriteLine(produto.AplicarCupomDescontoPorcentagem(0.10f));
+            Console.WriteLine(produto.VerificarQuantidadeEmEstoque());
+            Console.WriteLine(produto.Imprimir());
 
         }
     }
